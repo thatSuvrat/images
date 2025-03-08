@@ -28,7 +28,10 @@ def attach_gif(frames_folder, output_gif):
         images = [os.path.join(frames_folder, image) for image in images]
 
         frames = [ Image.open(frame) for frame in images]
-        frames[0].save(output_gif, save_all=True, append_images=frames[1:], loop= 0, duration=80, transparency = 1 )
+        frames[0].save(output_gif, save_all=True, append_images=frames[1:], loop= 0, duration=80, transparency = 0, disposal = 2)
+        print(f"Saved gif to {output_gif}")
+    else:
+        print(f"Folder {frames_folder} does not exist")
 
 
 if __name__ == "__main__":

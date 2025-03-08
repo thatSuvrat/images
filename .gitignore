@@ -5,6 +5,7 @@ __pycache__/
 
 gif-handler/
 *.gif
+final_boykisser/
 
 # C extensions
 *.so
