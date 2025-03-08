@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+gif-handler/
+*.gif
+
 # C extensions
 *.so
 
